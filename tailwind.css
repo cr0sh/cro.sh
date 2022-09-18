@@ -551,6 +551,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.static {
+  position: static;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -792,7 +796,7 @@ a {
   padding-left: 0.5rem;
 }
 
-.main ul.nested {
+.main ul ul {
   list-style-position: inside;
   padding-left: 1rem;
   list-style-type: circle;
