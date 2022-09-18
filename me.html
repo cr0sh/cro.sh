@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junghyun Nam's Résumé page">
+    <link rel="shortcut icon" href="/resume_favicons/favicon.ico">
+    <link rel="apple-touch-icon" href="resume_favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/resume_favicons/site.webmanifest">
+    <link href="tailwind.css" rel="stylesheet">
+    <title>Junghyun Nam (남정현)'s Résumé</title>
+</head>
+
+<body>
+    <div class="main py-8 px-6 md:px-12 lg:w-2/3 2xl:w-2/5 m-auto">
+        <h1 class="text-center text-4xl font-semibold font-serif py-4"> Junghyun Nam
+            <span class="inline-block text-xl print:text-lg font-normal font-sans">(남정현)</span>
+        </h1>
+        <section class="section-contacts">
+            <div class="ml-auto mr-0 w-fit">
+                <table class="ml-auto mr-0">
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><a href="mailto:hyun@cro.sh">hyun@cro.sh</a></td>
+                    </tr>
+                    <tr>
+                        <td>Telegram:</td>
+                        <td><a href="https://t.me/cr0sh">@cr0sh</a></td>
+                    </tr>
+                    <tr>
+                        <td>GitHub:</td>
+                        <td><a href="https://github.com/cr0sh">@cr0sh</a></td>
+                    </tr>
+                    <tr>
+                        <td>Blog:</td>
+                        <td><a href="https://blog.cro.sh">blog.cro.sh</a></td>
+                    </tr>
+                </table>
+                <p class="print:hidden"><a href="javascript:window.print();">Print This Page</a></p>
+                <p class="hidden text-sm print:block">Also available on <a
+                        href="https://cro.sh/me">https://cro.sh/me</a></p>
+            </div>
+        </section>
+        <section>
+            <h2 id="education">Education</h2>
+            <section>
+                <h3>
+                    Seoul National University <span class="text-xl subheader">2019.03 ~ leave in absense
+                    </span>
+                </h3>
+                <p>Currently on undergraduate courses majoring in <a href="https://cse.snu.ac.kr/en">Computer Science &
+                        Engineering</a>.</p>
+                <ul>
+                    <li>GPA: 3.9/4.3 (not finalized)</li>
+                    <li>Credits: 45/41 (not finalized)</li>
+                    <li>Featured courses:
+                        <ul class="nested">
+                            <li>M1522.000800 Systems Programming (A+): Programming with Linux API, implementing memory
+                                allocators, web proxies, etc.</li>
+                            <li>4190.310 Programming Languages (A0): Understanding principles of programming languages,
+                                lambda calculus, type theory, etc.</li>
+                            <li>4190.415 Introduction to Computer Security (GaTech CS6265 via 2020 Digital Winter
+                                Session,
+                                <a href="https://blog.cro.sh/posts/cs6265-epilogue/">writeup</a>
+                                available in Korean) (A0)
+                            </li>
+                            <li>4190.407 Computer Architecture (A+): RISC-V ISA, virtual memory and paging, pipelining
+                                and
+                                hazards, other miscellaneous optimizations across hardwares & softwares.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Also double-majoring in <a href="https://stat.snu.ac.kr/en">Statistics</a>.</p>
+            </section>
+            <section>
+                <h3>Sejong Science High School <span class="text-lg subheader">2016.03 ~ 2019.02</span></h3>
+            </section>
+        </section>
+        <section>
+            <h2 id="work-experiences">Work Experiences</h2>
+            <p>Note: Currently I'm on an alternative supplementary service as skilled industrial personnel, ending on
+                July
+                30th, 2023.
+            </p>
+            <p>
+                저는 현재 보충역 산업기능요원으로 복무 중이며 예상 소집해제일은 2023년 7월 30일입니다.
+            </p>
+            <section>
+                <h3>Hyperithm (<a href="https://hyperithm.jp">https://hyperithm.jp</a>) <span
+                        class="text-lg subheader">2021.08 ~ current</span></h3>
+                <p>Hyperithm is a leading digital assets manager in Asia, based on Japan and Korea.</p>
+                <p>Working as an alternative supplementary service as skilled industrial personnel.</p>
+                <ul>
+                    <li>Head of Infrastructure</li>
+                    <li>Maintaining overall cloud infrastructure based on AWS and GCP.</li>
+                    <li>Maintaining <i>KEX</i>, a HFT-optimized cryptocurrency exchanges data feed.
+                        <ul class="nested">
+                            <li>(think stripped-down version of ECS or EKS with some internal niche feature demands).
+                            </li>
+                            <li>Keywords: Asynchronous Programming, Rust, <a href="https://tokio.rs">Tokio</a>, HTTP,
+                                WebSocket.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Maintaining additional infrastructure like L7 proxy clusters for KEX
+                        <ul class="nested">
+                            <li>Keywords: NGINX, <a href="https://aws.amazon.com/ecs">AWS ECS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Designed & managed development of <i>Roretzi</i>, a trading strategy management infrastructure.
+                        <ul class="nested">
+                            <li>Keywords: Rust, <a href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a>,
+                                <a href="https://aws.amazon.com/s3/">AWS S3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Developed & maintaining <i>Garki</i>, an DevOps toolkit for AWS infrastructures.
+                        <ul class="nested">
+                            <li>Keywords: Rust, <a href="https://clap.rs">Clap</a>, <a
+                                    href="https://aws.amazon.com/systems-manager/">AWS SSM</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Research Intern at <a href="http://cares.snu.ac.kr">CARES Lab</a> <span
+                        class="text-lg subheader">2021.03.26 ~ 2021.06.30</span></h3>
+                <p>Started as SNU UROP(undergraduate research opportunities program) on February, then switched to paid
+                    intern on March.</p>
+                <p>Worked on RustFTL, a (partial) Rust port <a href="https://github.com/vtess/FEMU">FEMU</a> SSD
+                    emulator.</p>
+                <p>Rewrote FTL(flash translation layer) part of FEMU into Rust and reported about use of Rust on
+                    embedded systems and focused on safety, performace impact, and idiomacy of Rust code on FTL
+                    structures.
+                </p>
+                <p>
+                    Final report and documentation were constructed with <a
+                        href="https://github.com/rust-lang/mdBook">mdBook</a> and <a
+                        href="https://doc.rust-lang.org/stable/rustdoc/">rustdoc</a>.
+                </p>
+            </section>
+            <section>
+                <h3>Engineering Intern at <a href="https://cnai.ai/en/home">CN.AI</a> <span
+                        class="text-lg subheader">2021.08.01 ~ 2021.08.28</span></h3>
+                <p>Constructed data pipeline for deep audio classifier with <a href="https://pyo3.rs">PyO3</a> and HDF5
+                    to boost training speed.</p>
+                <p>Developed a demo website with StyleGAN2 which synthesizes 'median face' from given two facial images.
+                </p>
+                <ul>
+                    <li>The model is pretrained with FFHQ dataset on TensorFlow, and communicates with backend with a
+                        simple TCP server.</li>
+                    <li>The backend is written in Golang with its standard net/http module and the <a
+                            href="https://www.gorillatoolkit.org/">Gorilla web toolkit</a>.</li>
+                    <li>The frontend is based on React.</li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <p>Under construction</p>
+        </section>
+        <section>
+            <h2>Talks</h2>
+            <p>Under construction</p>
+        </section>
+        <section>
+            <h2>Acknowledgements</h2>
+            <p>
+                The <a href="/favicon.ico">favicon</a> of this page was generated using following graphics from Twitter
+                Twemoji:
+            </p>
+            <ul>
+                <li>Graphics Title: 1f4f0.svg</li>
+                <li>Graphics Author: Copyright 2020 Twitter, Inc and other contributors
+                    (<a href="https://github.com/twitter/twemoji">https://github.com/twitter/twemoji</a>)</li>
+                <li>Graphics Source: <a
+                        href="https://github.com/twitter/twemoji/blob/master/assets/svg/1f4f0.svg">https://github.com/twitter/twemoji/blob/master/assets/svg/1f4f0.svg</a>
+                </li>
+                <li>Graphics License: CC-BY 4.0 (<a
+                        href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

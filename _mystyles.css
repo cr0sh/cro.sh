@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    @apply text-gray-900 dark:text-gray-200 print:text-black;
+    @apply bg-slate-100 dark:bg-slate-900 print:bg-white;
+}
+
+@media print {
+    :root {
+        font-size: 8pt;
+    }
+}
+
+a {
+    @apply underline;
+}
+
+.main section {
+    @apply py-3;
+}
+
+.main section * {
+    @apply font-light;
+}
+
+.main h2 {
+    @apply text-3xl font-semibold py-2;
+}
+
+.main h3 {
+    @apply text-2xl font-normal py-1;
+}
+
+.main p {
+    @apply py-2;
+}
+
+.main ul {
+    @apply pl-2 py-0.5 list-inside list-disc;
+}
+
+.main ul.nested {
+    @apply pl-4 list-inside;
+    list-style-type: circle;
+}
+
+.section-contacts div {
+    @apply text-right text-base font-light py-6;
+    @apply w-1/5 min-w-fit;
+}
+
+.section-contacts tr td:first-child {
+    @apply text-left;
+}
+
+.section-contacts a {
+    @apply text-right text-fuchsia-800 dark:text-fuchsia-400 print:text-fuchsia-700 font-normal no-underline;
+}
+
+.section-contacts p {
+    @apply font-normal;
+}
+
+.subheader {
+    @apply inline-block text-gray-500 dark:text-gray-400 print:text-gray-500 font-light;
+}
