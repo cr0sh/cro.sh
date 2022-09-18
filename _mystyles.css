@@ -41,7 +41,7 @@ a {
     @apply pl-2 py-0.5 list-inside list-disc;
 }
 
-.main ul.nested {
+.main ul ul {
     @apply pl-4 list-inside;
     list-style-type: circle;
 }
