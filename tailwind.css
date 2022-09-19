@@ -593,6 +593,10 @@ video {
   list-style-position: inside;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
+
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
