@@ -66,3 +66,7 @@ a {
 .subheader {
     @apply inline-block text-gray-500 dark:text-gray-400 print:text-gray-500 font-light;
 }
+
+.github-icon {
+    @apply inline dark:fill-slate-200 mx-2;
+}

@@ -571,6 +571,10 @@ video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .table {
   display: table;
 }
@@ -871,10 +875,24 @@ a {
   }
 }
 
+.github-icon {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: inline;
+}
+
 @media (prefers-color-scheme: dark) {
+  .github-icon {
+    fill: #e2e8f0;
+  }
+
   .dark\:bg-slate-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  }
+
+  .dark\:fill-slate-200 {
+    fill: #e2e8f0;
   }
 
   .dark\:text-gray-200 {
