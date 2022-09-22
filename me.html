@@ -276,23 +276,47 @@
             <p>Under construction 🚧</p>
             <section>
                 <h3>Nerf
-                    <span class="text-lg subheader">Rust, Serde, Tokio, Hyper, HTTP</span>
+                    <span class="text-lg subheader">Rust, Serde, Tokio, Tower, Hyper, HTTP</span>
                     <a href="https://github.com/cr0sh/nerf">
                         <svg class="github-icon" width="1em" height="1em">
                             <use href="#github-icon" />
                         </svg>
                     </a>
                 </h3>
+                <p>HTTP request framework with <code>tower-rs</code> intergration.</p>
+                <p>Its main purpose is to do an experiment about refactoring company-private cryptocurrency exchanges
+                    API into composable <code>tower::Layer</code>s, achieving:</p>
+                <ul>
+                    <li>Switchable HTTP client backends.</li>
+                    <li>Configurable rate limits (provided by <code>tower-rs</code>).</li>
+                    <li>Multiplexed HTTP clients (provided by <code>tower-rs</code>).</li>
+                    <li><a
+                            href="https://github.com/cr0sh/nerf/blob/be64d23de43bab36a1657b14e38db5514a35d581/nerf/tests/axum_mock.rs">Mock
+                            testing paired with <code>axum</code>.</a></li>
+                    <li>Automatic throttling based on API responses with remaining rate limits (TODO).</li>
+                </ul>
             </section>
             <section>
                 <h3>lzn
-                    <span class="text-lg subheader">Rust, Web Scraper, SQLite, Diesel ORM, HTTP Server</span>
+                    <span class="text-lg subheader">Rust, Web Scraper, SQLite, Diesel ORM</span>
                     <a href="https://github.com/cr0sh/lzn">
                         <svg class="github-icon" width="1em" height="1em">
                             <use href="#github-icon" />
                         </svg>
                     </a>
                 </h3>
+                <p>
+                    Lezhin/Naver Webtoon scraper. Was private in the past for ethical reasons, and made public recently
+                    as the bot protection mechanism has changed so the scraper is not working. Only saves 'free'
+                    episodes.
+                </p>
+                <p>Features:</p>
+                <ul>
+                    <li>SQLite-backed storage (may be easily switchable into other Postgres/MySQL/etc.)</li>
+                    <li>Embedded web server for local use.</li>
+                    <li>Performs authentication to bypass some protections on CDN.</li>
+                    <li>Exports into comic viewer formats(basically zipped sequence of images).</li>
+                </ul>
             </section>
             <section>
                 <h3>LC-3 Toolsets
@@ -303,6 +327,19 @@
                         </svg>
                     </a>
                 </h3>
+                <p>Rust implementation of Little Computer 3 tools, including:</p>
+                <ul>
+                    <li><a href="https://github.com/cr0sh/lc3-rs"><code>lc3-rs</code></a>: A LC-3 ISA
+                        implementation(simulator).</li>
+                    <li><a href="https://github.com/cr0sh/lc3dbg"><code>lc3dbg</code></a>: A command-line debugger with
+                        mem/reg inspection and rewinding.</li>
+                    <li><a href="https://github.com/cr0sh/lc3asm"><code>lc3asm</code></a>: An full-featured LC-3
+                        assembler.</li>
+                    <li><a href="https://github.com/cr0sh/lc3p2atest"><code>lc3p2atest</code></a>: Fuzzer for Computer
+                        Concepts undergraduate course's project #2 assignment.</li>
+                    <li><a href="https://github.com/cr0sh/lc3web"><code>lc3web</code></a>: WASM-compiled LC-3 playground
+                        on browser. <a href="https://lc3.cro.sh">Try it online</a></li>
+                </ul>
             </section>
             <section>
                 <h3>Kaimak
@@ -313,6 +350,11 @@
                         </svg>
                     </a>
                 </h3>
+                <p><a
+                        href="https://chrome.google.com/webstore/detail/kaikas/jblndlipeogpafnldhgmapagcccfchpi">Kaikas</a>-<a
+                        href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn">Metamask</a>
+                    bridge Chrome extension. Its purpose is to use the Ledger hardware wallet with Kaikas extension on
+                    Klaytn DApps, as most of which do not support Metamask.</p>
             </section>
             <section>
                 <h3><a href="https://pc.cro.sh">pc.cro.sh</a>
@@ -323,12 +365,36 @@
                         </svg>
                     </a>
                 </h3>
+                <p>
+                    MapleStory(an online MMORPG game) settings store. Technically this is a public key-value store
+                    with:
+                </p>
+                <ul>
+                    <li>Data validation(should be a valid game configuration with windows registry export format)</li>
+                    <li>AES-256 data encryption, performed only on client side with WASM(the configuration seems to
+                        store somewhat sensitive information)</li>
+                    <li>Bot protection with reCAPTCHA V2</li>
+                    <li>Cloudflare Workers & Workers KV backed: capital efficiency</li>
+                    <li>Material style web UI</li>
+                </ul>
             </section>
             <section>
                 <h3 id="find-cro-sh"><a href="https://find.cro.sh">find.cro.sh</a>
                     <span class="text-lg subheader">TypeScript, React, Fuse.js, Web Scraping, Chrome
                         Extension</span>
                 </h3>
+                <p>Inventory/storage search engine for MapleStory.</p>
+                <p>
+                    This service consists of two components:
+                </p>
+                <ul>
+                    <li><a
+                            href="https://chrome.google.com/webstore/detail/%EB%A9%94%EC%9D%B4%ED%94%8C%EC%8A%A4%ED%86%A0%EB%A6%AC-%EC%9D%B8%EB%B2%A4%ED%86%A0%EB%A6%AC-%EA%B2%80%EC%83%89-beta/bnnkkbefmdlhlmifffehooifdmecnikh?hl=ko">A
+                            Chrome extension</a> which indexes the user's account inventories/storage items via script
+                        injection. The index is then exported into JSON.</li>
+                    <li><a href="https://find.cro.sh">find.cro.sh</a>: a React webapp which fuzzy-searches the items of
+                        an imported index.</li>
+                </ul>
             </section>
             <section>
                 <h3>zandam</a>
@@ -350,10 +416,9 @@
         </section>
         <section>
             <h2 id="talks">Talks</h2>
-            <p>Under construction 🚧</p>
             <section>
                 <h3>Introduction to NIZK Proofs</h3>
-                <p>To be uploaded.</p>
+                <p>Under construction 🚧: to be uploaded.</p>
             </section>
             <section>
                 <h3>Rust 비동기 프로그래밍 (Asynchronous Rust Programming)</h3>
