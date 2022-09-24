@@ -650,6 +650,14 @@ video {
   padding-left: 1rem;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-\[1em\] {
+  padding-top: 1em;
+}
+
 .text-center {
   text-align: center;
 }
