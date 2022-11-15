@@ -666,11 +666,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-semibold {
   font-weight: 600;
 }
@@ -743,6 +738,10 @@ video {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     font-size: 7.7pt;
   }
+}
+
+body {
+  font-family: 'AppleSDGothicNeo', sans-serif;
 }
 
 a {

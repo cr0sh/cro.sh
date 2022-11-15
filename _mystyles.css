@@ -13,6 +13,10 @@
     }
 }
 
+body {
+    font-family: 'AppleSDGothicNeo', sans-serif;
+}
+
 a {
     @apply underline;
 }
